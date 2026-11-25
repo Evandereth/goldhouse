@@ -34,3 +34,11 @@ body {
 .animate-float-slow {
   animation: float-slow 6s ease-in-out infinite;
 }
+
+@media (min-width: 768px) {
+  .wide-container {
+    width: 85vw;
+    max-width: none;
+    margin-inline: calc(50% - 42.5vw);
+  }
+}

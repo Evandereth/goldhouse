@@ -1,18 +1,15 @@
-// import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
-// import Advisors from "./components/Advisors";
-// import SmartHomes from "./components/SmartHomes";
-// import Services from "./components/Services";
-// import Catalog from "./components/Catalog";
-// import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Advisors from "./components/Advisors";
+import SmartHomes from "./components/SmartHomes";
+import Services from "./components/Services";
+import Catalog from "./components/Catalog";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <>
-      <h1>
-        Hello world
-      </h1>
-      {/* <Navbar />
+      <Navbar />
       <main>
         <Hero />
         <Advisors />
@@ -20,7 +17,7 @@ export default function App() {
         <Services />
         <Catalog />
       </main>
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
