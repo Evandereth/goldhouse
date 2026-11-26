@@ -13,11 +13,11 @@ export default function StatCard({ end, suffix = "+", pad = 0, label, filled = f
         filled ? "border-brand bg-brand text-white" : "border-brand/30 bg-white/60 text-brand"
       }`}
     >
-      <p className="text-3xl font-medium">
+      <p className="text-2xl font-medium sm:text-3xl">
         {text}
         {suffix}
       </p>
-      <p className={`mt-5 text-sm ${filled ? "text-white" : "text-ink"}`}>{label}</p>
+      <p className={`mt-4 text-sm leading-snug sm:mt-5 ${filled ? "text-white" : "text-ink"}`}>{label}</p>
     </div>
   );
 }

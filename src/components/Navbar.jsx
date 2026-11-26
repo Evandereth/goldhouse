@@ -21,10 +21,10 @@ export default function Navbar() {
         scrolled || open ? "bg-cream/90 shadow-sm backdrop-blur" : "bg-transparent"
       }`}
     >
-      <nav className="wide-container mx-auto flex items-center justify-between px-6 py-4">
+      <nav className="wide-container mx-auto flex items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
         <Logo />
 
-        <ul className="hidden items-center gap-3 text-xs md:flex">
+        <ul className="hidden items-center gap-5 text-sm md:flex lg:gap-8 lg:text-base">
           {links.map((l, i) => (
             <li key={l} className="flex items-center gap-3">
               <a
@@ -39,14 +39,12 @@ export default function Navbar() {
         </ul>
 
         <div className="flex items-center gap-4 text-xs">
-          <button className="hidden items-center gap-1 sm:flex">
-            EN <Icon name="chevron-down" size={12} />
+          
+          <Icon name="search" size={25} className="cursor-pointer transition hover:text-brand" />
+          <button onClick={() => setOpen(!open)} aria-label="Menu" className="md:hidden cursor-pointer">
+            {open ? <Icon name="close" size={25} /> : <Icon name="menu" size={25} />}
           </button>
-          <Icon name="search" size={18} className="cursor-pointer transition hover:text-brand" />
-          <button onClick={() => setOpen(!open)} aria-label="Menu" className="md:hidden">
-            {open ? <Icon name="close" size={20} /> : <Icon name="menu" size={20} />}
-          </button>
-          <Icon name="menu" size={18} className="hidden cursor-pointer md:block" />
+          <Icon name="menu" size={25} className="hidden cursor-pointer" />
         </div>
       </nav>
 

@@ -12,8 +12,9 @@ const iconPaths = {
   ),
   "bed-double": (
     <>
-      <path d="M2 4v16M22 4v16M2 17h20M5 17v3m14-3v3M5 13h14a3 3 0 0 1 3 3v1H2v-1a3 3 0 0 1 3-3Z" />
-      <path d="M5 13V8h5a3 3 0 0 1 3 3v2m0 0V9h5a3 3 0 0 1 3 3v1" />
+      <path d="M3 4v16M21 4v16M3 17h18M3 20h18" />
+      <path d="M3 13h18v4H3z" />
+      <path d="M6 13V8h4a3 3 0 0 1 3 3v2M13 13v-2a3 3 0 0 1 3-3h2v5" />
     </>
   ),
   "chevron-down": <path d="m6 9 6 6 6-6" />,

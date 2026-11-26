@@ -10,21 +10,21 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-ink/30 bg-blush px-6 pb-8 pt-14">
+    <footer className="border-t border-ink/30 bg-blush px-4 pb-8 pt-12 sm:px-6 sm:pt-14">
       <div className="wide-container mx-auto">
         <Reveal>
-          <div className="grid gap-10 md:grid-cols-[1.3fr_repeat(4,1fr)]">
-            <div>
+          <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 md:grid-cols-[1.3fr_repeat(4,1fr)]">
+            <div className="col-span-2 sm:col-span-1">
               <Logo />
-              <p className="mt-4 max-w-[14rem] text-[0.7rem]">
+              <p className="mt-4 max-w-[14rem] text-sm leading-relaxed">
                 Our vision is to make all people the best place to live for them.
               </p>
             </div>
 
             {columns.map((c) => (
               <div key={c.title}>
-                <h4 className="text-sm font-medium">{c.title}</h4>
-                <ul className="mt-4 space-y-2 text-[0.7rem] text-ink/60">
+                <h4 className="text-base font-medium">{c.title}</h4>
+                <ul className="mt-4 space-y-2 text-sm text-ink/60">
                   {c.items.map((item) => (
                     <li key={item}>
                       <a href="#" className="transition hover:text-brand">{item}</a>
@@ -37,7 +37,7 @@ export default function Footer() {
         </Reveal>
 
         <div className="mt-12 flex flex-col justify-between gap-2 border-t border-ink/10 pt-5 text-[0.65rem] text-ink/50 sm:flex-row">
-          <p>© {new Date().getFullYear()} Goldhouse Real Estate. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Goldhouse Real Estate. All rights reserved. | Built with ❤️ <a href="#" className="underline transition hover:text-brand">Oluwatobi</a></p>
           <div className="flex gap-5">
             <a href="#">Term &amp; Agreement</a>
             <a href="#">Privacy Policy</a>
